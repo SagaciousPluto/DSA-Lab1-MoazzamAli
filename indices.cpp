@@ -18,4 +18,18 @@ int main(){
     for(auto x: indices){
         cout<<x<<endl;
     }
+
+    cout<<"Getting results for key not present:"<<endl;
+    int arr2[] = {6,2,4,8,9};
+    vector<int> indices2 = get_positions(arr2, 5, 90);
+    for(auto x: indices2){
+        cout<<x<<endl;
+    }
+    
+    cout<<"Getting results for empty array:"<<endl;
+    int arr3[] = {};
+    vector<int> indices3 = get_positions(arr3, 0, 480);
+    for(auto x: indices3){
+        cout<<x<<endl;
+    }
 }
